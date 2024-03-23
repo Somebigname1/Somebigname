@@ -155,12 +155,11 @@ img#moving-image {
   align-items: center;
 }
 .pupil {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 101px;
   background-color: #cadb2a;
 }
-
 
 
 /* Contdown Css */
