@@ -1,16 +1,22 @@
 
 import './App.css';
-import Comingsoon from './Comingsoon';
+
+import LoadingAnimation from './LoadingAnimation';
 
 
-import Header from './Header';
+
+
+
 
 
 function App() {
   return (
     <>
+  
     <div className='container'>
-    <Comingsoon/>
+    
+    <LoadingAnimation/>
+  
 
     </div>
     </>

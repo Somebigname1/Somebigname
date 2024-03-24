@@ -1,3 +1,4 @@
+import DateTimeDisplay from "./DateTimeDisplay";
 import Header from "./Header";
 import Movement from "./Movement";
 import Social from "./Social";
@@ -16,8 +17,7 @@ const Comingsoon =()=>{
                 <p>Till then catch our crazy side here.</p>
                 <Social/>
             </div>
-
-           
+{/* <DateTimeDisplay/> */}
         </div>
         </>
     )

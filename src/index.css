@@ -1,8 +1,8 @@
-/* @font-face{
-    font-family: 'horizon';
-    src: url('/public/fonts/horizon.ttf') format('truetype');
+@font-face{
+    font-family: 'Arges';
+    src: url('/public/fonts/Arges.ttf') format('truetype');
 }
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
 
 :root {
   --link-size: 64px;
@@ -12,7 +12,7 @@ h1,h2,h3,h4,h5,span,a,li,p{
   font-family: 'Manrope';
 }
 .container{
-  max-width: 1800px;
+  /* max-width: 1800px; */
   margin: auto;
 }
 
@@ -23,6 +23,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #2E3192;
+}
+
+body {
+  margin: 0px;
+
+ 
 }
 
 .main-header {
@@ -374,3 +380,47 @@ main .cards .card p{
 }
 
 }
+
+#wrapper {
+  width: 94%;
+  height: 10px;
+  position: absolute;
+  left: 40px;
+  top: 90%;
+  background: #efefef;
+  overflow: hidden;
+}
+
+#bar {
+  width: 0;
+  height: 100%;
+  background: #C9FF40;
+}
+
+.loading-text {
+  position: absolute;
+  top: 84%;
+  font-family: Arges;
+  left: 11%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 5em;
+  font-weight: 900;
+}
+.main-content {
+  display: none;
+}
+
+div#sbn-banner{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1E1E1E;
+  width: 100%;
+
+}
+div#sbn-banner img {
+  width: 90%;
+}
+
