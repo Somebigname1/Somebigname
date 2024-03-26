@@ -1,4 +1,5 @@
 import Countdown from "./Countdown";
+import DateTimeDisplay from "./DateTimeDisplay";
 
 const Header =() =>{
     return(
@@ -10,7 +11,8 @@ const Header =() =>{
             </div>
 
             <div className="countdown-timer">
-                <Countdown/>
+                {/* <Countdown/> */}
+                <DateTimeDisplay/>
             </div>
         </div>
         </div>

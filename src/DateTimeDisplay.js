@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-function DateTimeDisplay() {
+const DateTimeDisplay=()=> {
   const [dateTime, setDateTime] = useState(new Date());
 
   useEffect(() => {
@@ -12,9 +12,9 @@ function DateTimeDisplay() {
   }, []);
 
   return (
-    <div>
-      <p>Current Date and Time:</p>
-      <p>{dateTime.toLocaleString()}</p>
+    <div className='current-time'>
+      {/* <p>Current Date and Time:</p> */}
+      <p>&#123;{dateTime.toLocaleString()}&#125;</p>
     </div>
   );
 }

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import gsap from 'gsap'; // Import GSAP library
 import Comingsoon from './Comingsoon';
 
-function LoadingAnimation() {
+const LoadingAnimation=()=> {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
@@ -13,19 +13,18 @@ function LoadingAnimation() {
     const wrapper = document.getElementById('wrapper');
     const sbn = document.getElementById('sbn-banner');
 
-    // Animate the loading bar
+  
     gsap.to(bar, { width: "100%", duration: 2, delay: 1, onComplete: showMainContent });
 
-    // Update the loading progress text
     const interval = setInterval(() => {
       setProgress(prevProgress => prevProgress + 1);
     }, 30);
 
     function showMainContent() {
-      // Once the loading is complete, reveal the main content
+      
       mainContent.style.display = 'block';
-      loaderText.style.display = 'none'; // Hide the loading text
-      wrapper.style.display = 'none'; // Hide the wrapper containing the loader line
+      loaderText.style.display = 'none'; 
+      wrapper.style.display = 'none'; 
       sbn.style.display='none';
     }
 
