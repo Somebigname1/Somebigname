@@ -24,12 +24,12 @@ function Movement() {
 
   return (
     <>
-     <div class="eyes">
-        <div class="eye">
-          <div class="pupil"></div>
+     <div className="eyes">
+        <div className="eye">
+          <div className="pupil"></div>
         </div>
-        <div class="eye">
-          <div class="pupil"></div>
+        <div className="eye">
+          <div className="pupil"></div>
         </div>
       </div></>
   );

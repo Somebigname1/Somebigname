@@ -332,6 +332,11 @@ main .cards .bottom-flip {
     height: 70px;
     width: 120px;
 }
+
+
+.current-time p{
+  font-size: 1.3em;
+}
   .pupil {
     height: 50px;
     width: 50px;
@@ -413,9 +418,6 @@ main .cards .card p{
   color: #fff;
   font-size: 5em;
   font-weight: 900;
-}
-.main-content {
-  display: none;
 }
 
 div#sbn-banner{

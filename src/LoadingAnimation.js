@@ -7,7 +7,6 @@ const LoadingAnimation=()=> {
 
   useEffect(() => {
     const bar = document.getElementById('bar');
-    const progressText = document.getElementById('progress');
     const mainContent = document.querySelector('.main-content');
     const loaderText = document.querySelector('.loading-text');
     const wrapper = document.getElementById('wrapper');
@@ -34,7 +33,7 @@ const LoadingAnimation=()=> {
   return (
     <>
       <div id='sbn-banner'>
-        <img src={'images/sbn.png'}/>
+        <img src={'images/sbn.png'} alt='sbn'/>
     </div>
       <div id="wrapper">
         
@@ -98,8 +97,6 @@ export default LoadingAnimation;
 // }
 
 // export default LoadingAnimation;
-
-
 
 
 

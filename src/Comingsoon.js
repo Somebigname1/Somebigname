@@ -1,5 +1,6 @@
-import DateTimeDisplay from "./DateTimeDisplay";
-import Header from "./Header";
+import Header from "./Components/Global/Header";
+
+
 import Movement from "./Movement";
 import Social from "./Social";
 
@@ -7,7 +8,7 @@ const Comingsoon =()=>{
 
     return(
         <>
-         <Header/>
+        <Header/>
         <div className="maine-section">
           
             <div className="text-section">
