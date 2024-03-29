@@ -1,35 +1,34 @@
-const Hamburger = () =>{
+import React, { useState } from 'react';
 
-    document.addEventListener('DOMContentLoaded', function () {
-        const hamburger = document.querySelector('.hamburger');
-        const menu = document.querySelector('.menu');
-        const closeButton = document.querySelector('.close-btn');
-      
-        hamburger.addEventListener('click', function () {
-          menu.classList.toggle('show');
-        });
-      
-        closeButton.addEventListener('click', function () {
-          menu.classList.remove('show');
-        });
-      });
-      
-    return(
-        <>
-          <div class="hamburger-menu">
-        <div class="hamburger"></div>
-        <div class="menu">
-          <button class="close-btn">&times;</button>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
+
+const HamburgerMenu = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  return (
+    <div className="hamburger-menu">
+      <div className="hamburger" onClick={toggleMenu}>
+
+
+<img src={'images/Hamburgr.png'}/>
+
       </div>
-        </>
-    )
+      
+      <div className={`menu ${menuOpen ? 'show' : ''}`}>
+        <button className="close-btn" onClick={toggleMenu}>X</button>
+        <ul>
+          <li><a href="#">Menu Item 1</a></li>
+          <li><a href="#">Menu Item 2</a></li>
+          <li><a href="#">Menu Item 3</a></li>
+        </ul>
+      </div>
+    </div>
+  );
 }
 
-export default Hamburger;
+export default HamburgerMenu;
+
+

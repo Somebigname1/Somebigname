@@ -1,4 +1,5 @@
 
+import Hamburger from "./Components/Assets/Hamburger";
 import Header from "./Components/Global/Header";
 
 
@@ -9,7 +10,7 @@ const Comingsoon =()=>{
 
     return(
         <>
-       
+       <Hamburger/>
         <Header/>
         <div className="maine-section">
         

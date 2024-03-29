@@ -1,13 +1,5 @@
-
 import './App.css';
-
 import LoadingAnimation from './LoadingAnimation';
-
-
-
-
-
-
 
 function App() {
   return (
