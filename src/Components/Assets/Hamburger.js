@@ -20,10 +20,12 @@ const HamburgerMenu = () => {
       <div className={`menu ${menuOpen ? 'show' : ''}`}>
         <button className="close-btn" onClick={toggleMenu}>X</button>
         <ul>
-          <li><a href="#">Menu Item 1</a></li>
-          <li><a href="#">Menu Item 2</a></li>
-          <li><a href="#">Menu Item 3</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">What we do</a></li>
+          <li><a href="#">Get Started</a></li>
         </ul>
+        <a href='#' className='connects'>Connect with us</a>
       </div>
     </div>
   );

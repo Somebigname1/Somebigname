@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'Bodoni';
+    src: url('/public/fonts/Bodoni.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'PPultralight';
+    src: url('/public/fonts/PPultralight.ttf') format('truetype');
+  }
+
+div#banner-home{
+    background-color: #474BD4;
+    /* height: 100vh; */
+    padding: 20px;
+
+
+}
+
+.container.main-banner {
+  padding: 70px 0px;
+}
+
+.content-area h2 {
+    color: #E5E1D8;
+    font-family: 'PP Mori';
+    font-weight: 100;
+    font-size: 2.6em;
+}
+
+span.name {
+    font-family: 'Bodoni';
+    font-weight: 100;
+}
+
+
+
+
+  .Branding p {
+    color: #fff;
+    font-size: 24px;
+}
+
+.Branding h2 {
+  color: #fff;
+  font-family: 'Arges';
+  font-size: 4.5em;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.Branding h3 {
+  color: #E5E1D8;
+  font-weight: 100;
+  font-family: 'PP Mori';
+}
+span.second-fam {
+  font-family: 'PPultralight';
+}
+
+span.first-fam {
+  font-family: 'Bodoni';
+  font-weight: 100;
+  text-transform: lowercase;
+}
+
+.bg-div {
+  text-align: center;
+}
+.bg-div img {
+  width: 250px;
+}
+.bg-div > img {
+  animation: rotate-animation 10s infinite linear;
+}
+
+@keyframes rotate-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
