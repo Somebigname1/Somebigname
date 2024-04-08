@@ -56,9 +56,10 @@
 // export default LoadingAnimation;
 
 import React, { useState, useEffect } from 'react';
-import gsap from 'gsap'; // Import GSAP library
+import gsap from 'gsap';
 import Comingsoon from './Comingsoon';
-import Banner from './Components/Landing/Banner';
+
+
 
 const LoadingAnimation = () => {
   const [progress, setProgress] = useState(0);
@@ -69,11 +70,14 @@ const LoadingAnimation = () => {
     const loaderText = document.querySelector('.loading-text');
     const wrapper = document.getElementById('wrapper');
     const sbn = document.getElementById('sbn-banner');
+    const media=document.getElementById('media-hide')
 
-    // Add no-scroll class to body to hide scrollbar during loading animation
+
+ 
     document.body.classList.add('no-scroll');
 
     gsap.to(bar, { width: "100%", duration: 2, delay: 1, onComplete: showMainContent });
+    // gsap.to(bar, { width: "100%", duration: 2, delay: 1 });
 
     const interval = setInterval(() => {
       setProgress(prevProgress => prevProgress + 1);
@@ -84,8 +88,11 @@ const LoadingAnimation = () => {
       loaderText.style.display = 'none';
       wrapper.style.display = 'none';
       sbn.style.display = 'none';
+      media.style.position="fixed";
+      media.style.bottom="0";
       
-      // Remove no-scroll class from body to show scrollbar
+      
+    
       document.body.classList.remove('no-scroll');
     }
 
@@ -102,8 +109,9 @@ const LoadingAnimation = () => {
       </div>
       <div className="loading-text">Loading {progress}%</div>
       <div className="main-content">
-        {/* <Comingsoon /> */}
-        <Banner/>
+        <Comingsoon />
+        {/* <Banner/> */}
+      
       </div>
     </>
   );

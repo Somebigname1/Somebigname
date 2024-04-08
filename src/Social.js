@@ -1,4 +1,4 @@
-const Social = () =>{
+const Socials = () =>{
     return(
         <>
          <div className="social-icons">
@@ -19,4 +19,4 @@ const Social = () =>{
     )
 }
 
-export default Social;
+export default Socials;

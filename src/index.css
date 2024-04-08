@@ -9,11 +9,24 @@
   src: url('/public/fonts/Mori.ttf') format('truetype');
 }
 
+
+
+/* @media (min-width: 1281px) {
+  
+  .container.media-icons{
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+  }
+
+} */
+
+
 body.no-scroll {
   overflow: hidden;
 }
 :root {
-  --link-size: 64px;
+  --link-size: 74px;
   --trans-property: all 0.3s ease;
 }
 h1,h2,h3,h4,h5,span,a,li,p{
@@ -27,18 +40,27 @@ h1,h2,h3,h4,h5,span,a,li,p{
 
 body {
   margin: 0px;
-
-}
-
-section#coming-soon{
-  background-image: url(/public/images/tripy-bg.png);
+  background-image: url(/public/images/coming-bg.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #2E3192;
-  height: 100vh;
+  background-color: #1C1C1C;
+
 }
 
+
+section#coming-soon{
+
+
+  padding: 20px;
+}
+
+.main-logo img {
+  width: 20%;
+}
+.main-logo {
+  text-align: right;
+}
 body {
   margin: 0px;
 
@@ -80,6 +102,28 @@ body {
   margin: 30px 0px;
   font-weight: 600;
 }
+
+.coming-text h2 {
+  color: #fff;
+  font-size: 8.5em;
+  margin: 0px;
+  font-weight: 900;
+  font-family: 'Arges';
+  letter-spacing: 1px;
+}
+.coming-text h3 {
+  font-family: 'Arges';
+  color: #fff;
+  font-size: 5.5em;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.container.media-icons .col-lg-6.socials {
+  display: flex;
+  align-items: end;
+  justify-content: start;
+}
+
 .text-section h3 {
   color: #D8E1F2;
   font-size: 3.6em;
@@ -99,7 +143,8 @@ img#moving-image {
   /* height: 100vh; */
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
+  margin-bottom: 14px;
 }
 
 .social-icon {
@@ -110,11 +155,17 @@ img#moving-image {
   height: var(--link-size);
   margin: 8px;
   background-color: transparent;
-  border: 1px solid #FF45C2;
+  border: 1px solid #E5E1D8;
   border-radius: 50%;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
   text-decoration: none;
   transition: var(--trans-property);
+}
+.social-mediaa p {
+  color: #E5E1D8;
+  text-transform: capitalize;
+  font-size: 1.5em;
+  font-family: 'PP Mori';
 }
 
 .text-section p {
@@ -124,8 +175,9 @@ img#moving-image {
 
 .social-icon i {
   margin: auto;
-  font-size: 24px;
-  color: #FF45C2;
+  font-size: 18px;
+  color: #E5E1D8;
+
   z-index: 1;
   transition: var(--trans-property);
 }
@@ -143,7 +195,7 @@ img#moving-image {
 
 
 .social-icon.dribbble:after {
-  background-color: #FF45C2;
+  background-color: #C9FF40;
 }
 
 
@@ -151,10 +203,11 @@ img#moving-image {
 .social-icon:hover {
   transform: translateY(-4px);
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.16);
+  border: none;
 }
 
 .social-icon:hover i {
-  color: #CADB2A;
+  color: #1C1C1C;
 }
 
 .social-icon:hover:after {
@@ -313,6 +366,7 @@ div#sbn-banner{
   justify-content: center;
   background-color: #1E1E1E;
   width: 100%;
+  z-index: 9;
 
 }
 div#sbn-banner img {
@@ -479,4 +533,55 @@ a.connects {
 
 .header-logo {
   text-align: center;
+}
+
+
+
+
+
+/* GAMEBOX CSS */
+#box {
+
+  margin-bottom: 20px;
+  width: 700px;
+  height: 400px;
+  background-color: #1C1C1C;
+  /* position: absolute; */
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+  transition: width 0.5s, height 0.5s, right 0.5s, bottom 0.5s;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  cursor: none;
+
+}
+
+
+
+.initial-state {
+  width: 400px;
+  height: 400px;
+}
+
+.expanded-state {
+  width: 800px;
+  height: 800px;
+  bottom: 50%;
+  right: 50%;
+  transform: translate(50%, 50%);
+}
+
+.col-lg-6.box-game{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+.customCursor {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
 }
