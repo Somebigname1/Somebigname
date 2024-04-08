@@ -79,7 +79,7 @@ const GameBox = () => {
       </div>
       {cursorVisible && (
         <img
-          src={"images/Frame.png"}
+          src={"images/frame.png"}
           alt="Custom Cursor"
           className="customCursor"
           style={{ left: cursorPosition.x, top: cursorPosition.y }}
