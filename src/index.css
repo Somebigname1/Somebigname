@@ -274,7 +274,23 @@ img#moving-image {
     height: 70px;
     width: 120px;
 }
+#box {
 
+  margin-bottom: 20px;
+  width: auto !important;
+  height: auto !important;
+  background-color: #1C1C1C;
+  /* position: absolute; */
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+  transition: width 0.5s, height 0.5s, right 0.5s, bottom 0.5s;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  cursor: none;
+  position: relative;
+
+}
 
 .current-time p{
   font-size: 1.3em;
@@ -397,7 +413,41 @@ br{
 }
 
 
+div#box h2{
+display: none;
 }
+
+div#box img{
+  width: 100%;
+  display: block !important;
+  border-radius: 12px;
+}
+
+
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  div#media-hide {
+    position: relative !important;
+}
+  
+  
+}
+
+
+
+
+
+
+
+div#box img{
+ display: none;
+}
+
 
 #wrapper {
   width: 94%;
@@ -621,7 +671,18 @@ a.connects {
   border: 1px solid #fff;
   border-radius: 10px;
   cursor: none;
+  position: relative;
 
+}
+div#box h2 {
+  color: #fff;
+  position: absolute;
+  left: 30%;
+  top: 44%;
+  font-family: 'Arges';
+  font-size: 4.5em;
+  font-weight: 800;
+  letter-spacing: 4px;
 }
 
 

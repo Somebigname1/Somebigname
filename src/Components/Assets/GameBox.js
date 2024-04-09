@@ -77,6 +77,12 @@ const GameBox = () => {
         onMouseMove={handleMouseMove}>
 
           <h2>HEY COME HERE!</h2>
+          <img
+          src={"images/meme.jpg"}
+        
+         
+         
+        />
        
       </div>
       {cursorVisible && (
@@ -87,6 +93,8 @@ const GameBox = () => {
           style={{ left: cursorPosition.x, top: cursorPosition.y }}
         />
       )}
+
+
    
     </>
   );
