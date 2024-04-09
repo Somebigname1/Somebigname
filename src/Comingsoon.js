@@ -2,6 +2,7 @@
 
 import GameBox from "./Components/Assets/GameBox";
 import Hamburger from "./Components/Assets/Hamburger";
+import DateTimeDisplay from "./DateTimeDisplay";
 
 import Socials from "./Social";
 
@@ -12,7 +13,7 @@ const Comingsoon =()=>{
     return(
         <>
         <section id="coming-soon">
-       <Hamburger/>
+       {/* <Hamburger/> */}
         {/* <Header/> */}
     
         {/* <div className="maine-section">
@@ -44,6 +45,7 @@ const Comingsoon =()=>{
                 <div className="col-lg-6">
                     <div className="main-logo">
                         <img src={"images/Logo.png"}/>
+                        <DateTimeDisplay/>
                     </div>
                 </div>
             </div>

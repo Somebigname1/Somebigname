@@ -11,8 +11,8 @@ const DateTimeDisplay = () => {
     return () => clearInterval(interval);
   }, []);
 
-  const dayOptions = { weekday: 'long' }; // Specify options to display only the day of the week
-  const timeOptions = { hour: 'numeric', minute: 'numeric', second: 'numeric' }; // Specify options to display time
+  const dayOptions = { weekday: 'long' }; 
+  const timeOptions = { hour: 'numeric', minute: 'numeric', second: 'numeric' }; 
 
   return (
     <div className='current-time'>

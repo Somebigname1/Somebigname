@@ -111,6 +111,9 @@ body {
   font-family: 'Arges';
   letter-spacing: 1px;
 }
+.current-time {
+  padding-top: 20px;
+}
 .coming-text h3 {
   font-family: 'Arges';
   color: #fff;
@@ -328,6 +331,31 @@ main .cards .card .flip-card{
 }
 main .cards .card p{
   font-size: 12px;
+}
+
+#wrapper {
+  width: 94%;
+  height: 10px;
+  position: absolute;
+  left: 14px !important;
+  top: 66% !important;
+  background: #efefef;
+  overflow: hidden;
+}
+
+.loading-text {
+  position: absolute;
+  top: 63% !important;
+  font-family: Arges;
+  left: 25%  !important;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 3em !important;
+  font-weight: 900;
+}
+
+div#media-hide{
+  position: relative !important;
 }
 
 }
@@ -584,4 +612,6 @@ a.connects {
   position: fixed;
   pointer-events: none;
   z-index: 9999;
+  width: 15%;
 }
+

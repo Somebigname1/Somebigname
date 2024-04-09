@@ -75,11 +75,13 @@ const GameBox = () => {
       <div id="box" className="initial-state customCursorDiv" onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         onMouseMove={handleMouseMove}>
+
+          <h2>HEY COME HERE!</h2>
        
       </div>
       {cursorVisible && (
         <img
-          src={"images/frame.png"}
+          src={"images/meme.jpg"}
           alt="Custom Cursor"
           className="customCursor"
           style={{ left: cursorPosition.x, top: cursorPosition.y }}
