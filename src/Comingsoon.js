@@ -31,7 +31,7 @@ const Comingsoon =()=>{
 
         
 <div className="container">
-            <div className="row">
+            <div className="row big-name">
                 <div className="col-lg-6">
                     <div className="coming-text">
                     

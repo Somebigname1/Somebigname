@@ -357,6 +357,45 @@ main .cards .card p{
 div#media-hide{
   position: relative !important;
 }
+.coming-text h2{
+  font-size: 3.5em;
+}
+.coming-text h3{
+  font-size: 2.5em;
+}
+
+.row.big-name {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.main-logo img {
+  width: 36%;
+}
+.main-logo {
+  text-align: center;
+}
+
+.social-mediaa p{
+  font-size: 18px;
+  text-align: center;
+}
+
+br{
+  display: none;
+}
+
+.coming-text {
+  text-align: center;
+  padding: 40px 0px;
+}
+.social-icons{
+  justify-content: center;
+}
+:root{
+  --link-size: 60px;
+}
+
 
 }
 
