@@ -274,6 +274,10 @@ img#moving-image {
     height: 70px;
     width: 120px;
 }
+
+.customCursor{
+  display: none;
+}
 #box {
 
   margin-bottom: 20px;
