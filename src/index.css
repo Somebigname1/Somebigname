@@ -354,14 +354,14 @@ main .cards .card p{
   height: 10px;
   position: absolute;
   left: 14px !important;
-  top: 66% !important;
+  top: 70% !important;
   background: #efefef;
   overflow: hidden;
 }
 
 .loading-text {
   position: absolute;
-  top: 63% !important;
+  top: 67% !important;
   font-family: Arges;
   left: 25%  !important;
   transform: translate(-50%, -50%);
@@ -428,7 +428,7 @@ div#box img{
 
 
 
-
+/* FOR IPHONE */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   
   div#media-hide {
@@ -437,6 +437,9 @@ div#box img{
   
   
 }
+
+
+/* FOR ANDROID */
 
 @media (min-width: 481px) and (max-width: 767px) {
   
