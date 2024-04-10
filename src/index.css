@@ -735,19 +735,16 @@ div#box h2 {
     position: relative !important;
   }
 
+
 }
 
 @media only screen and (min-width: 769px) {
-  div#media-hide{
-    position: relative !important;
-  }
+
+  
 }
 
 @media (min-width: 1281px) {
   
-  div#media-hide{
-    position:fixed !important;
-    bottom: 0px;
-  }
+ 
   
 }
