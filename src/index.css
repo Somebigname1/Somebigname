@@ -738,13 +738,17 @@ div#box h2 {
 
 }
 
-@media only screen and (min-width: 769px) {
-
+@media (min-width: 769px) and (max-width: 858px) {
+  
+  div#media-hide{
+    position: relative !important;
+  }
   
 }
-
-@media (min-width: 1281px) {
+@media (min-width: 1025px) and (max-width: 1432px) {
   
- 
+  div#media-hide{
+    position: relative !important;
+  }
   
 }
