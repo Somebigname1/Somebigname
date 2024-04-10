@@ -1,14 +1,15 @@
 
 
 import GameBox from "./Components/Assets/GameBox";
-import Hamburger from "./Components/Assets/Hamburger";
+import EmailForm from "./Components/EmailForm";
+
 import DateTimeDisplay from "./DateTimeDisplay";
 
 import Socials from "./Social";
 
 
 const Comingsoon =()=>{
-
+ 
 
     return(
         <>
@@ -39,6 +40,7 @@ const Comingsoon =()=>{
                         <h3>So, we will take some as well.
                         </h3>
                     </div>
+             {/* <EmailForm/> */}
     
                 </div>
 
