@@ -2,6 +2,7 @@
 
 import GameBox from "./Components/Assets/GameBox";
 import EmailForm from "./Components/EmailForm";
+import Started from "./Components/HomePage/Started";
 
 import DateTimeDisplay from "./DateTimeDisplay";
 
@@ -14,21 +15,7 @@ const Comingsoon =()=>{
     return(
         <>
         <section id="coming-soon">
-       {/* <Hamburger/> */}
-        {/* <Header/> */}
-    
-        {/* <div className="maine-section">
-        
-            <div className="text-section">
-            <Movement/>
-          
-                <h2>Big Names Take Time</h2>
-                <h3>So, We will take some <br/> as well.</h3>
-                <p>Till then catch our crazy side here.</p>
-                <Social/>
-            </div>
-
-        </div> */}
+   
 
         
 <div className="container">
@@ -37,7 +24,7 @@ const Comingsoon =()=>{
                     <div className="coming-text">
                     
                         <h2>Big Names take time.</h2>
-                        <h3>So, we will take some as well.
+                        <h3>We will take some as well.
                         </h3>
                     </div>
              {/* <EmailForm/> */}
@@ -57,8 +44,9 @@ const Comingsoon =()=>{
             <div className="row">
                 <div className="col-lg-6 socials">
                     <div className="social-mediaa">
+                        
+                        <p>Till then catch our crazy side here.</p>
                         <Socials/>
-                        <p>This coming soon page Follow along to get notified <br/>when more free templates are released.</p>
                     </div>
                 </div>
 

@@ -56,7 +56,7 @@ section#coming-soon{
 }
 
 .main-logo img {
-  width: 20%;
+  width: 28%;
 }
 .main-logo {
   text-align: right;
@@ -105,7 +105,7 @@ body {
 
 .coming-text h2 {
   color: #fff;
-  font-size: 8.5em;
+  font-size: 7em;
   margin: 0px;
   font-weight: 900;
   font-family: 'Arges';
@@ -117,7 +117,7 @@ body {
 .coming-text h3 {
   font-family: 'Arges';
   color: #fff;
-  font-size: 5.5em;
+  font-size: 4em;
   font-weight: 900;
   letter-spacing: 1px;
 }
@@ -137,13 +137,47 @@ body {
 img#moving-image {
   width: 60%;
 }
-
+a{
+  color: transparent;
+}
 
 /* SOCIAL MEDIA ICONS */
 
 .social-icons {
   width: 100%;
   /* height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 14px;
+}
+.social-icons a{
+  text-decoration: none;
+}
+
+.social-icon {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  width: var(--link-size);
+  height: var(--link-size);
+  margin: 8px;
+  background-color: transparent;
+  border: 1px solid #E5E1D8;
+  border-radius: 50%;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
+  text-decoration: none;
+  transition: all 0.8s ease; /* Added transition for all properties */
+}
+
+.social-icon.blurred {
+  filter: blur(3px);
+}
+
+
+/* .social-icons {
+  width: 100%;
+  
   display: flex;
   align-items: center;
   justify-content: start;
@@ -163,13 +197,13 @@ img#moving-image {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
   text-decoration: none;
   transition: var(--trans-property);
-}
+}*/
 .social-mediaa p {
   color: #E5E1D8;
   text-transform: capitalize;
-  font-size: 1.5em;
+  font-size: 1.8em;
   font-family: 'PP Mori';
-}
+} 
 
 .text-section p {
   color: #FF45C2;
@@ -273,6 +307,11 @@ img#moving-image {
   .eye {
     height: 70px;
     width: 120px;
+}
+.container.media-icons .col-lg-6.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .customCursor{
