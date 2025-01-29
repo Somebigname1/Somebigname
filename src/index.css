@@ -1,0 +1,1158 @@
+@font-face{
+    font-family: 'Arges';
+    src: url('/public/fonts/Arges.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'PP Mori';
+  src: url('/public/fonts/Mori.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Bodoni';
+  src: url('/public/fonts/Bodoni.ttf') format('truetype');
+}
+
+:root {
+  --link-size: 74px;
+  --trans-property: all 0.3s ease;
+}
+
+
+.container{
+  max-width: 100%;
+}
+body{
+  /* height: 100vh; */
+  background: #1c1c1c;
+}
+html{
+  overflow-x: hidden;
+}
+
+
+/* =====Header css===== */
+.header-logo img {
+  width: 160px;
+}
+.start-head h2 {
+  color: #fff;
+  font-family: 'Arges';
+  font-size: 5em;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+img.main_logo {
+  width: 30%;
+}
+
+.start-head.touch{
+  text-align: right;
+}
+
+.start-head.touch H3 {
+  font-family: 'PP Mori';
+  color: #E5E1D8;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.header-logo {
+  text-align: center;
+}
+
+
+.current-time p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 100;
+  font-family: 'PP Mori';
+}
+
+
+
+
+/* MAIN BANNER */
+
+div#banner-home{
+  background-color: #1c1c1c;
+  /* height: 100vh; */
+  padding: 20px;
+background-image: url(/public/images/second-bg.png);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+}
+
+.content-area img{
+  width: 30%;
+  padding-bottom: 20px;
+}
+
+.container.main-banner {
+padding: 70px 0px;
+}
+
+.content-area h2 {
+  color: #E5E1D8;
+  font-family: 'PP Mori';
+  font-weight: 100;
+  font-size: 2.6em;
+}
+
+span.name {
+  font-family: 'Bodoni';
+  font-weight: 100;
+}
+
+
+
+.container.main-story {
+  padding-top: 100px;
+}
+.Branding p {
+  color: #fff;
+  font-size: 24px;
+}
+
+.Branding h2 {
+color: #fff;
+font-family: 'Arges';
+font-size: 4.5em;
+font-weight: 900;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+
+.Branding h3 {
+color: #E5E1D8;
+font-weight: 100;
+font-family: 'PP Mori';
+}
+span.second-fam {
+font-family: 'PPultralight';
+}
+
+span.first-fam {
+font-family: 'Bodoni';
+font-weight: 100;
+text-transform: lowercase;
+}
+
+.bg-div {
+text-align: center;
+}
+.bg-div img {
+width: 250px;
+}
+.bg-div > img {
+animation: rotate-animation 10s infinite linear;
+}
+
+@keyframes rotate-animation {
+0% {
+  transform: rotate(0deg);
+}
+50% {
+  transform: rotate(180deg);
+}
+100% {
+  transform: rotate(360deg);
+}
+}
+
+
+
+/* who we are */
+
+.content-sec {
+  text-align: center;
+  position: relative;
+}
+
+
+h2.head-1 {
+  background: linear-gradient(to bottom, transparent, #E5E1D8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+
+
+}
+h2.head-4{
+  background: linear-gradient(to bottom, #E5E1D8, transparent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+span.weight {
+  font-weight: 900;
+}
+
+.join-us.touch {
+  padding-top: 50px;
+}
+
+.content-sec h2{
+  font-size: 7em;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-family: 'Arges';
+  letter-spacing: 1px;
+}
+
+h2.head-2, .head-3{
+
+
+
+  color: #E5E1D8;
+}
+section#who-we{
+  background-color: #1C1C1C;
+  padding: 170px 0px;
+  background-image: url(/public/images/footer-ovrly.png);
+}
+
+.content-sec img {
+  position: absolute;
+  left: 42%;
+  top: -68px;
+}
+
+/* STARTED SECTION CSS */
+
+section#first-section{
+  background-image: url(/public/images/second-bg.png);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.story {
+  padding-left: 20px;
+}
+.trunk-para p {
+  font-family: 'PP Mori';
+  color: #e0dcd3;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.join-us a {
+  color: #e0dcd3;
+  font-family: 'Arges';
+  font-size: 2.8em;
+  font-weight: 900;
+  text-decoration: none;
+  position: relative;
+
+
+}
+.link:after {
+  bottom: -4px;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  background: #fff;
+  opacity: 0.6;
+  transition: width 0.3s ease 0s, opacity 0.3s ease 0s;
+  
+  width: 0;
+}
+.link:hover:after {
+  width: 100%;
+  opacity: 0.9;
+
+}
+
+.story p {
+  color: #E5E1D8;
+  font-family: PP mori;
+  text-transform: uppercase;
+}
+
+.story h2 {
+  color: #E5E1D8;
+  font-family: Arges;
+  font-size: 4em;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.founding-story h2 {
+  color: #E5E1D8;
+  font-family: 'Arges';
+  font-size: 5em;
+  text-transform: uppercase;
+}
+
+span.cool {
+  color: #FF67CD;
+  font-weight: 900;
+}
+
+
+
+/* WHAT WE DO CSS */
+
+section#whatwedo {
+  background: #C9FF40;
+  margin-top: -2px;
+}
+.what-we-do {
+  text-align: center;
+}
+.what-we-do h2 {
+  color: #000;
+  font-family: 'Arges';
+  font-size: 5em;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.what-we-do h3 {
+  font-family: 'PP Mori';
+  font-size: 18px;
+}
+
+
+
+
+/* SERVICE - DESIGN  */
+
+section#design{
+  background: #C9FF40;
+  margin-top: -10px;
+  position: sticky;
+  top: 0px;
+
+}
+.capabilities h2 {
+  font-family: 'Arges';
+  font-size: 3.5em;
+  font-weight: 800;
+}
+.capabilities {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 24px;
+  border-bottom: 1px solid #ffffff40;
+}
+.options {
+  display: flex;
+}
+
+p.numbers {
+  font-family: 'bodoni';
+  font-size: 32px;
+}
+
+p.option_num {
+  font-family: 'PP Mori';
+  font-size: 1.3em;
+}
+
+.design-heads h2 {
+  font-family: 'Arges';
+  font-size: 5em;
+  font-weight: 900;
+}
+
+.react-tabs__tab{
+  border: 1px solid #000 !important;
+  font-family: 'Arges';
+    font-size: 3em;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 6px 22px ;
+    border-bottom: 1px solid #000;
+    border-radius: 30px !important;
+    margin: 0px 10px;
+}
+
+.react-tabs__tab--selected{
+  background-color: #000 !important;
+  border: 1px solid #000;
+  color: #c9ff40 !important;
+  font-family: 'Arges';
+    
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 6px 22px ;
+    border-bottom: 1px solid #000 !important;
+}
+
+.container.our-services .row {
+  padding: 30px 0px;
+  border: 2px solid #0000000f;
+  border-right: 0px;
+  border-left: 0px;
+  margin: 0px 12px;
+}
+
+.data-tabs {
+  border-bottom: 1px solid #00000021;
+  padding-top: 40px;
+}
+
+
+.data-tabs:nth-child(3) {
+  border: none;
+}
+
+.data-tabs p {
+  font-size: 2em;
+  font-family: 'PP Mori';
+}
+
+span.main-service {
+  font-family: 'Arges';
+  font-size: 2.5em;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.react-tabs__tab:focus:after{
+  display: none !important
+}
+
+
+.react-tabs__tab-list{
+  border-bottom: none !important;
+}
+
+
+/* SERVICES - CONSULTING */
+
+
+section#consult{
+  background: #FF67CD;
+  margin-top: -10px;
+  position: sticky;
+  top: 0px;
+
+}
+
+section#consult .react-tabs__tab--selected{
+  color: #FF67CD !important;
+}
+
+
+
+
+/* SERVICES - DEVELOPMENT */
+
+section#development{
+  background: #474BD4;
+  margin-top: -10px;
+  position: sticky;
+  top: 0px;
+
+ 
+
+}
+section#development .design-heads h2 {
+  font-family: 'Arges';
+  font-size: 5em;
+  font-weight: 900;
+  color: #fff;
+}
+
+section#development .react-tabs__tab--selected{
+  background-color: #fff !important;
+  color: #474bd4 !important;
+  border: transparent !important;
+}
+
+section#development .react-tabs__tab{
+  border: 1px solid #E5E1D8 !important;
+  color: #E5E1D8 ;
+}
+
+section#development .data-tabs p{
+  color: #fff;
+}
+
+section#development .data-tabs{
+  border-bottom: 1px solid #ffffff21;
+}
+
+/* FOOTER CSS */
+
+.footer_form {
+  color: #e0dcd3;
+}
+
+.main_form {
+  margin: 100px;
+  border: 1px solid #e5e1d86c;
+  transform: rotate(355deg);
+  padding: 50px;
+  border-radius: 20px;
+  background-color: #212121;
+  margin-top: 0px;
+}
+.container.first_cont{
+  padding-top: 100px;
+}
+.footer_form p {
+  font-family: 'PP Mori';
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.footer_form h2{
+  font-family: 'Arges';
+  font-size: 6em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+span.do{
+  color: #fff;
+  font-weight: 900;
+}
+.ticket img {
+  width: 350px;
+}
+
+.ticket{
+  text-align: right;
+}
+
+input {
+  background: transparent;
+  color: #e0dcd3;
+  font-family: 'PP Mori';
+  width: 76%;
+  border: none;
+  border-bottom: 1px solid #e0dcd3;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+}
+
+textarea.form-control{
+  color: #e0dcd3;
+  background: transparent;
+  font-family: 'PP Mori';
+  border: none;
+  border-bottom: 1px solid #e0dcd3;
+  border-radius: 0px;
+}
+
+textarea::placeholder{
+  color: #6d7475 !important;
+  text-transform: uppercase;
+font-size: 14px;
+}
+
+button.submit-btn {
+  color: #C9FF40;
+  background: transparent;
+  border: none;
+  font-family: 'Arges';
+  font-size: 2.5em;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-decoration: underline;
+  margin-top: 60px;
+}
+
+
+section#main_footer{
+  background-image: url(/public/images/footer-ovrly.png);
+  background-size: cover;
+  background-position: center center;
+  z-index: 9999;
+  background-color: #000;
+  position: relative;
+}
+
+.email-section h2 {
+  color: #e0dcd3;
+  font-family: 'PP Mori';
+  font-size: 22px;
+}
+
+span.e-mail {
+  font-family: 'Bodoni';
+  color: #fff;
+  font-size: 26px;
+}
+
+.col-lg-5.mails{
+  display: flex;
+  align-items: end;
+}
+
+.social-icons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-bottom: 14px;
+}
+
+.social-icons a {
+  text-decoration: none;
+}
+
+.social-icon {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  width: var(--link-size);
+  height: var(--link-size);
+  margin: 8px;
+  background-color: transparent;
+  border: 1px solid #E5E1D8;
+  border-radius: 50%;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
+  text-decoration: none;
+  transition: all 0.8s ease;
+  flex-shrink: 0;
+}
+
+.social-icon.blurred {
+  filter: blur(3px);
+}
+
+.social-icon i {
+  margin: auto;
+  font-size: 18px;
+  color: #E5E1D8;
+  z-index: 1;
+  transition: var(--trans-property);
+}
+
+.social-icon:after {
+  content: "";
+  width: var(--link-size);
+  height: var(--link-size);
+  position: absolute;
+  transform: translate(0, var(--link-size));
+  border-radius: 50%;
+  transition: var(--trans-property);
+}
+
+.social-icon.dribbble:after {
+  background-color: #C9FF40;
+}
+
+/*** Animations ***/
+.social-icon:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.16);
+  border: none;
+}
+
+.social-icon:hover i {
+  color: #1C1C1C;
+}
+
+.social-icon:hover:after {
+  transform: translate(0) scale(1.2);
+}
+
+/* Ensure the icons remain circular on smaller screens */
+@media (max-width: 768px) {
+  .social-icon {
+    width: var(--link-size);
+    height: var(--link-size);
+    border-radius: 50%; 
+  }
+}
+
+/* Blur effect for hovered and non-hovered icons */
+.social-icon.blurred:not(:hover) {
+  filter: blur(3px);
+}
+
+
+.links_top a {
+  color: #c9ff40;
+  font-family: 'Bodoni';
+  font-size: 2em;
+}
+ul.footer-list {
+  display: flex;
+  justify-content: end;
+  padding-top: 40px;
+}
+ul.footer-list li {
+  color: #e0dcd3;
+  font-family: 'PP Mori';
+  list-style: none;
+  padding: 0px 40px;
+}
+
+
+
+.links_top {
+  text-align: end;
+}
+
+.copyright {
+  text-align: end;
+}
+
+.row.social_footer {
+  padding-top: 40px;
+}
+
+.copyright img{
+  width: 100%;
+}
+
+
+
+/* CTA */
+
+
+.container.call_action {
+  padding: 0px;
+}
+.cta img {
+  width: 100%;
+}
+
+section#call_to_action{
+  position: relative;
+  z-index: 9999;
+}
+
+
+
+/* MEDIA QUERY */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .content-sec h2{
+    font-size: 3em;
+  }
+  br{
+    display: none;
+  }
+
+  .content-sec img{
+    position: absolute;
+    left: 14%;
+    width: 70%;
+    top: -92px;
+  }
+  
+}
+
+
+/* horizontal section css
+ */
+
+
+section#our-projects{
+  z-index: 999999;
+  background-color: #000;
+}
+
+.trigger {
+  position: absolute;
+}
+.trigger--one {
+  left: 0;
+}
+
+.scene {
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.scene--active {
+  position: fixed;
+}
+.scene--ended {
+  position: absolute;
+  bottom: 0;
+  top: auto;
+}
+
+.horizontal-scroll-section {
+  position: relative;
+  min-height: 100vh;
+  opacity: 0;
+  transition: 0.2s opacity;
+}
+.horizontal-scroll-section img {
+  display: block;
+  max-height: 80%;
+  width: auto;
+}
+.horizontal-scroll-section--init {
+  opacity: 1;
+  background: #474bd4;
+}
+.horizontal-scroll-section__content {
+  display: flex;
+  align-items: center;
+}
+.horizontal-scroll-section__content-wrapper {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  position: relative;
+  color: #fff;
+}
+.horizontal-scroll-section__content-section {
+  position: relative;
+  min-width: 60vw;
+  
+  padding: 0 40px;
+  height: auto;
+
+}
+.horizontal-scroll-section__image {
+  display: flex;
+  align-items: center;
+}
+.horizontal-scroll-section__image h2 {
+  margin-left: 20px;
+  width: 250px;
+  text-align: left;
+  flex-shrink: 0;
+}
+.horizontal-scroll-section__image--two img {
+  max-width: 400px;
+}
+.horizontal-scroll-section__image--four img {
+  max-width: 400px;
+}
+.horizontal-scroll-section--animation-one .horizontal-scroll-section__image--two {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+section#our-projects {
+  background: #474bd4;
+  background-image: url(/public/images/footer-ovrly.png);
+}
+
+.capabilities.selects h2 {
+  color: #fff;
+}
+.capabilities.selects p {
+  color: #fff;
+}
+
+.design-page {
+  text-align: right;
+}
+
+.design-page h2 {
+  color: #fff;
+  font-family: 'Arges';
+  font-size: 5em;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+p.project_c {
+  color: #e5e1d8;
+  font-family: 'Arges';
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+h2.project_dev {
+  font-family: 'Arges';
+  font-size: 6em;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+p.project-desc {
+  font-family: 'PP Mori';
+  font-size: 28px;
+}
+
+
+
+
+/* HAMBURGER CSS */
+
+.hamburger-menu {
+  position: fixed;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99999;
+}
+
+.hamburger .line_1, .line_2, .line_3 {
+  width: 40px;
+  height: 4px;
+  background-color: black;
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+.hamburger:hover{
+  cursor: pointer;;
+}
+
+.hamburger{
+  background-image: url(/public/images/Menu-Center.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 435px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.menu {
+  position: fixed;
+  bottom: -400px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px; 
+  /* background-color: #f1f1f1; */
+  background-image: url(/public/images/menu-bg.png);
+  padding: 20px;
+  border-radius: 8px;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+  transition: bottom 0.7s ease-in-out;
+  text-align: center;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-size: cover;
+}
+
+
+
+.menu.show {
+  bottom: 0;
+}
+
+
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  padding: 30px 0px;
+}
+
+.menu ul li {
+  margin-bottom: 10px;
+  padding: 10px 0px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #1c1c1cb8;
+  font-size: 18px;
+    font-family: 'Bodoni';
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+a.connects {
+  font-family: 'Arges';
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+  font-size: 34px;
+  padding: 14px 100px;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.close-btn {
+  position: absolute;
+  top: 6px;
+  right: 180px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.show {
+  display: block;
+  transform: translate(-50%, -70%);
+}
+
+
+/* STATS SECTION */
+
+.col-lg-6.lime {
+  background: #C9FF40;
+  min-height: 34vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+section#stats {
+  background-color: #000;
+  z-index:  9999999999999;
+ position: relative;
+  padding: 150px 0px;
+  background-image: url(/public/images/footer-ovrly.png);
+}
+.col-lg-3.white {
+  background: #fff;
+  min-height: 34vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.col-lg-3.pink {
+  background: #FF45C2;
+  min-height: 38vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.container.analytics .row {
+  width: 70%;
+  margin: auto;
+}
+
+.upper-data h2 {
+  font-family: 'ARGES';
+  font-weight: 700;
+  font-size: 4em;
+}
+
+.number-data h2 {
+  font-family: 'Arges';
+  font-weight: 900;
+  font-size: 6em;
+  /* margin-top: 32%; */
+}
+
+.col-lg-3.simple-white {
+  background: #fff;
+  padding: 20px;
+}
+
+.upper-data.top-border {
+  border-top: 1px solid #0000002b;
+  border-bottom: none;
+}
+.col-lg-6.blue {
+  background: #474BD4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+}
+
+.upper-data {
+  border-bottom: 1px solid #0000002b;
+}
+
+.col-lg-3.white-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.stats-logo img{
+  width: 50%;
+}
+
+.upper-datas h3 {
+  font-family: 'Arges';
+  font-weight: 800;
+  font-size: 6em;
+}
+
+.upper-datas h4 {
+  font-family: 'Arges';
+  font-size: 3em;
+  font-weight: 800;
+}
+.stats-logo p {
+  color: #fff;
+  font-family: 'Arges';
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 0px;
+  padding-top: 14px;
+}
+
+.upper-data img {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  /* transform: rotate(322deg); */
+}
+.upper-data, .upper-datas{
+  position: relative;
+}
+
+.upper-datas img {
+  position: absolute;
+  right: 0;
+  top: 24px;
+}
+
+.upper h3 {
+  color: #fff;
+  font-family: 'Arges';
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.upper h4 {
+  color: #fff;
+  font-weight: 800;
+  font-family: 'Arges';
+  font-size: 5em;
+  margin-bottom: 0;
+}
+
+.col-lg-6.blue p {
+  color: #fff;
+  font-size: 3em;
+  margin-bottom: 0px;
+  font-family: 'Arges';
+}
+
+.number-datas h2 {
+  color: #fff;
+  font-family: 'Arges';
+  font-size: 3em;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+
+
+
+/* FORM SUBMISSION */
+
+p.success-message {
+  color: #fff;
+  font-family: 'PP Mori';
+  font-size: 1.3em;
+  float: right;
+  background: #474bd4;
+  padding: 10px;
+}

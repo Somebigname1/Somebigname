@@ -1,0 +1,102 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+header.App-header p {
+  font-size: 3em;
+}
+
+.App-header {
+  /* background-color: #000; */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+header.App-header img {
+  width: 300px;
+}
+
+header.App-header p {
+  font-size: 3em;
+  /* margin: 0; */
+}
+
+p.social {
+  font-size: 18px !important;
+  font-family: montserrat;
+  text-transform: capitalize;
+}
+
+header.App-header h2 {
+  margin: 0;
+}
+
+
+ul.social-icons img {
+  width: 100%;
+}
+
+ul.social-icons {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+ul.social-icons li {
+  padding: 10px 24px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  p.social{
+    padding: 6px;
+    line-height: 30px;
+  }
+  .App-header{
+    line-height: 24px;
+  }
+  header.App-header p{
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 1281px) {
+
+
+  .social_media {
+    margin-top: -10px;
+  }
+  p.social {
+    margin-top: -16px;
+}
+  
+}
+
+ul.social-icons a:hover{
+transform: translateY(-10px);
+}
+
+
+
+ul.social-icons a{
+-webkit-transition: all .4s ease-in-out;
+-moz-transition: all .4s ease-in-out;
+-o-transition: all .4s ease-in-out;
+-ms-transition: all .4s ease-in-out;
+}
+
